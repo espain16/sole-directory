@@ -4,7 +4,9 @@ function Modal() {
   console.log("still will go here soon ");
   return (
     <div>
-      <span></span>
+      <span>
+        <h2>Modal coming soon</h2>
+      </span>
     </div>
   );
 }
