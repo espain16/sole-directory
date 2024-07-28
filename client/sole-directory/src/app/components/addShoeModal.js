@@ -1,22 +1,19 @@
 "use client";
-// rename this to addshoemodal
 
-function Modal({ closeModalOnClick }) {
-  console.log("still will go here soon ");
-
+function AddShoeModal({ closeModalOnClick }) {
   function saveShoeData() {
     console.log("save your new shoe data now 👟");
   }
 
   return (
-    <div>
+    <div className="modal">
       <span>
         <h2>Modal coming soon</h2>
         <button className="close-button" onClick={closeModalOnClick}>
           &times;
         </button>
       </span>
-      <section>
+      <section className="new-shoe-details">
         <label>
           Shoe Name:
           <input name="shoeName" type="text" />
@@ -31,8 +28,9 @@ function Modal({ closeModalOnClick }) {
         </label>
         <button onClick={saveShoeData}>Save</button>
       </section>
+      <div className="modal-overlay"></div>
     </div>
   );
 }
 
-export default Modal;
+export default AddShoeModal;

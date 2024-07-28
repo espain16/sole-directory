@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1010;
+}
+
+.new-shoe-details{
+    display: flex;
+    flex-direction: column; 
+}

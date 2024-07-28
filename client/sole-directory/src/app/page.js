@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import Modal from "./components/Modal";
+import AddShoeModal from "./components/addShoeModal";
+import "./styles/global.css";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main className="main">
       <div>
         <h1> Welcome username here</h1>
         <div>
@@ -25,7 +26,7 @@ export default function Home() {
           <p> Add your fist shoe</p>
         </div>
       </div>
-      {isModalOpen && <Modal closeModalOnClick={closeModalOnClick} />}
+      {isModalOpen && <AddShoeModal closeModalOnClick={closeModalOnClick} />}
     </main>
   );
 }
